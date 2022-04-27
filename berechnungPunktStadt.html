@@ -3,14 +3,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!-- Z.3-5 zum Festsetzen des Seitenaussehens  -->
+        <meta name=“author“ content=“Tobias Krumrein“>
+        <meta name=“description“ content=“ Die Punkte müssen berechnet werden“>
         <link rel="stylesheet" href="stylesheetAB.css">                          <!-- Einladen(external) des Stylesheets für HTML-Seite -->
-        <title> Distanzberechnung Punkte zu einem beliebigen </title>            <!-- Titel der HTML-Seite -->
+        <title> Distanzberechnung Punkte zu einem beliebigen Punkt</title>       <!-- Titel der HTML-Seite -->        
         <script src="poi.js"></script>                                           <!-- Einladen(external) von poi.js -->
         <script src="point.js"></script>                                         <!-- Einladen(external) von point.js -->
         <script src="abstandsberechnungNeu.js" ></script>                        <!-- Einladen(external) von JavaScript Datei für Berechnung der Distanzen -->
     </head>
     <body>
-        <h1> Distanzberechnung Städte zu Punkt </h1>
+        <h1> Distanzberechnung Punkte </h1>
         <p> Distanz zwischen den gegebenen Punkten und dem Punkt: </p>
 
         <button id="aktPositionB" onclick="getLocation()">Aktuelle Position bestimmen</button>                    <!-- Button erstellen für momentane Position -->
@@ -22,11 +24,7 @@
         
         <script>                      
         // mit getElemtentById Textfeld auswählen und mit innerHTML ausgabeAB auf HTML Seite ausgeben
-        document.getElementById("ausgabe").innerHTML = ausgabeAB;
-
-       
-
-         
+        document.getElementById("ausgabe").innerHTML = ausgabeAB;         
         
         </script>                                                                
     </body>

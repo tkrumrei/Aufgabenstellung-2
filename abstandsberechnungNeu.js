@@ -1,21 +1,16 @@
 "use strict";
 
-
-
 var aPosition = {
     "type": "Point",
     "coordinates": [0,0]
 }
-/*
+
 aPosition.coordinates[0] = point[0];
 aPosition.coordinates[1] = point[1];
-*/
-
-
 
 // Punkt point als ersten Punkt für Formel speichern
-var lat1 = point[1];
-var lon1 = point[0];
+var lat1 = aPosition.coordinates[1];
+var lon1 = aPosition.coordinates[0];
 
 var ausgabeAB = "";
 var poisDistance = new Array(pois.features.length);
@@ -65,15 +60,12 @@ for(var i = 0; i < poisDistance.length; i++) {
 ausgabeAB = ausgabeAB + poisDistance[i][0]+ ": " + poisDistance[i][1] + "m" + "<br />";
 }
 
-/*
+
 // Abstand aktueller Standort Berechnung
 function abstandBerechnen() {
-    var platzh = [0,0];
-    platzh[0] = aPosition.coordinates[0];
-    platzh[1] = aPosition.coordinates[1];
 
-    var lat1 = platzh[1];
-    var lon1 = platzh[0];
+    var lat1 = aPosition.coordinates[1];
+    var lon1 = aPosition.coordinates[0];
 
     ausgabeAB = "";
     var poisDistance = new Array(pois.features.length);
@@ -121,7 +113,7 @@ function abstandBerechnen() {
     }
 
 }
-*/
+
 
 
                
