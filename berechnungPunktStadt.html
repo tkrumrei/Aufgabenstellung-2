@@ -5,16 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!-- Z.3-5 zum Festsetzen des Seitenaussehens  -->
         <link rel="stylesheet" href="stylesheetAB.css">                          <!-- Einladen(external) des Stylesheets für HTML-Seite -->
         <title> Distanzberechnung Städte zu Punkt </title>                       <!-- Titel der HTML-Seite -->
-        <script src="cities.js"></script>                                        <!-- Einladen(external) von cities.js -->
+        <script src="poi.js"></script>                                           <!-- Einladen(external) von poi.js -->
         <script src="point.js"></script>                                         <!-- Einladen(external) von point.js -->
-        <script src="abstandsberechnung.js" ></script>                           <!-- Einladen(external) von JavaScript Datei für Berechnung der Distanzen -->
+        <script src="abstandsberechnungNeu.js" ></script>                        <!-- Einladen(external) von JavaScript Datei für Berechnung der Distanzen -->
     </head>
     <body>
         <h1> Distanzberechnung Städte zu Punkt </h1>
-        <p> Distanz zwischen den Städten und dem Punkt aufsteigend sortiert: </p>
-        <p id="ausgabe" >  </p>                                                  <!-- leeres Textfeld erzeugen für die Ausgabe -->
+        <p> Distanz zwischen den gegebenen Punkten und dem Punkt: </p>
+
+        <textarea id="mPosition" type="text" placeholder="Koordinaten in GeoJSOn"></textarea>    <!-- Textfeld für Koordinaten -->
+        <button onclick="getLocation()">Momentane Position bestimmen</button>                   <!-- Button erstellen -->
+        <p id="ausgabe" >  </p>                                                              <!-- leeres Textfeld erzeugen für die Ausgabe -->
+        
         <script>                                                                 
-        document.getElementById("ausgabe").innerHTML = ausgabeAB;              
-        </script>                                                                <!-- mit getElemtentById Textfeld auswählen und mit innerHTML ausgabeAB auf HTML Seite ausgeben -->
+        // mit getElemtentById Textfeld auswählen und mit innerHTML ausgabeAB auf HTML Seite ausgeben
+        document.getElementById("ausgabe").innerHTML = ausgabeAB; 
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                document.getElementById("mPosition").innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            var aPosition = new Array(position.coords.latitude, position.coords.longitude);
+            aPosition = JSONConstructor(aPosition, "Point");
+            document.getElementById("mPosition").innerHTML = JSON.stringify(aPosition);
+        }
+
+        function JSONConstructor(array, type) {
+            this.type = type;
+            this.coordinates = array;
+        }
+
+         
+        
+        </script>                                                                
     </body>
 </html>

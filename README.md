@@ -8,7 +8,7 @@ Verwendet euer Ergebnis der letzten Aufgabe, und erweitert es um ein Eingabefeld
 welche einige Points-of-interest in der Umgebung Münster im GeoJSON-Format beinhaltet. Diese soll nun anstelle von cities.js verwendet werden.
 
 Das Eingabefeld soll einen Punkt im GeoJSON-Format entgegennehmen können, und euch somit erlauben euren Standort relativ zu den
-Punkten selber zu setzen. Zusätzlich soll es auch möglich sein, dass der aktuelle Standort vom Browser uber einen Button abgefragt
+Punkten selber zu setzen. Zusätzlich soll es auch möglich sein, dass der aktuelle Standort vom Browser über einen Button abgefragt
 wird und mithilfe DOM-Manipulation in das Textfeld geladen wird.
 
 Wie ihr den Browserstandort abfragen könnt, ist hier zu lesen:
