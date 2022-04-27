@@ -4,9 +4,12 @@
 Konzepte: GeoJSON, Arrow-Funktionen, DOM Manipulation, Events,
 JSDoc
 
-Verwendet euer Ergebnis der letzten Aufgabe, und erweitert es um ein Eingabefeld. Zusätzlich erhaltet Ihr eine neue Datei: poi.js, welche einige Points-of-interest in der Umgebung Munster im GeoJSON-Format beinhaltet. Diese soll nun anstelle von cities.js verwendet werden.
+Verwendet euer Ergebnis der letzten Aufgabe, und erweitert es um ein Eingabefeld. Zusätzlich erhaltet Ihr eine neue Datei: poi.js,
+welche einige Points-of-interest in der Umgebung Münster im GeoJSON-Format beinhaltet. Diese soll nun anstelle von cities.js verwendet werden.
 
-Das Eingabefeld soll einen Punkt im GeoJSON-Format entgegennehmen können, und euch somit erlauben euren Standort relativ zu den Punkten selber zu setzen. Zusätzlich soll es auch möglich sein, dass der aktuelle Standort vom Browser uber einen Button abgefragt wird und mithilfe DOM-Manipulation in das Textfeld geladen wird.
+Das Eingabefeld soll einen Punkt im GeoJSON-Format entgegennehmen können, und euch somit erlauben euren Standort relativ zu den
+Punkten selber zu setzen. Zusätzlich soll es auch möglich sein, dass der aktuelle Standort vom Browser uber einen Button abgefragt
+wird und mithilfe DOM-Manipulation in das Textfeld geladen wird.
 
 Wie ihr den Browserstandort abfragen könnt, ist hier zu lesen:
 www.w3schools.com/html/html5 geolocation.asp
