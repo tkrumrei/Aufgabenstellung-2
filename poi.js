@@ -1,4 +1,4 @@
-{
+var pois = {
 "type": "FeatureCollection",
 "features": [
 {
