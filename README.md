@@ -18,3 +18,21 @@ Weitere Hinweise:
 • Events: fügt mindestens ein Event-Listener eurer Wahl an einer sinnvollen Stelle hinzu
 • Funktionen: Erstellt mindestens eine Arrow-Funktion. Das wäre zum Beispiel im Event-Listener Sinnvoll
 • DOM Manipulation: gibt eurer Webseite einen Titel an. Dies soll über das DOM erfolgen (d.h. von JavaScript aus)
+• Erstellt zwei meta Tags (Tipp: document.createElement()): einen um euren Namen als Autorin bzw. Autor in den Metadaten
+  einzutragen (z.B. <meta name=“author“ content=“Erika Mustermann“>) und einen um eine kurze Beschreibung eurer Webseite anzugeben
+  (z.B. <meta name=“description“ content=“This is my cool website“>).
+
+Dokumentation
+• Die Funktionen sind in jsDoc-Syntax zu kommentieren, und zusätzlich mit Zeilenkommentaren zu versehen, die die inneren Abläufe der
+  Funktionen beschreiben.
+
+Bonuspunkte: Eigene Ideen fur zusätzliche Features sind gerne gesehen. Die Webseite könnte Beispielsweise bei Eingabe eines neuen
+geoJSON-Punkts uberprüfen, ob diese valide ist und ob diese ein Feature oder eine Featurecollection ist.
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Externe Libraries sind noch nicht erlaubt Die Aufgabe soll in Einzelarbeit bearbeitet werden.
+Erstellt bitte bei Fragen oder Unklarheiten einen Forenpost im Learnweb so dass diese dort, und gegebenenfalls in der darauf folgenden
+Sitzung, beantwortet werden können.
+Kreative Lösungsansätze und Codeschnipsel werden nominiert um in einer 5-minutigen Präsentation von den Verfassern vorgestellt zu
+werden. Durch die Vorstellung wird Schokolade gewonnen.
