@@ -1,5 +1,5 @@
 "use strict";
-
+var ausgabeAB = "";
 var aPosition = {
     "type": "Point",
     "coordinates": [0,0]
@@ -7,12 +7,11 @@ var aPosition = {
 
 aPosition.coordinates[0] = point[0];
 aPosition.coordinates[1] = point[1];
-
+/*
 // Punkt point als ersten Punkt für Formel speichern
 var lat1 = aPosition.coordinates[1];
 var lon1 = aPosition.coordinates[0];
 
-var ausgabeAB = "";
 var poisDistance = new Array(pois.features.length);
 
 // Berechnung der Abstände von Punkten(pois) zu Punkt mit for-Schleife 
@@ -59,7 +58,7 @@ function zweiteSpalteSortieren (a, b){
 for(var i = 0; i < poisDistance.length; i++) {
 ausgabeAB = ausgabeAB + poisDistance[i][0]+ ": " + poisDistance[i][1] + "m" + "<br />";
 }
-
+*/
 
 // Abstand aktueller Standort Berechnung
 function abstandBerechnen() {
@@ -114,7 +113,7 @@ function abstandBerechnen() {
 
 }
 
-
+abstandBerechnen();
 
                
 
