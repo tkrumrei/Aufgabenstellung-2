@@ -10,4 +10,6 @@ p   {color:rgb(8, 8, 77);
     font-size: x-large;
     text-align: center;}
 
-input {margin: auto;}
+textarea {
+    text-align: center;
+}
